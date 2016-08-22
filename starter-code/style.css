@@ -11,6 +11,16 @@ from Unit 1 - 5 below  */
 	margin: 5%;
 }
 
+.cardred {
+	background: red;
+	height: 200px;
+	width: 150px;
+	border: 1px solid black;
+	border-radius: 10px;
+	float: left;
+	margin: 5%;
+}
+
 h1   {
 	color: rgb(2, 132, 130);
 	font-family: Arial, sans-serif;
@@ -29,7 +39,7 @@ p {
 .name {
 	color: #ff0000;
 }
-.board {
+#game-board {
 	display: inline-block;
 	width: 50%;
 	height: 50%;

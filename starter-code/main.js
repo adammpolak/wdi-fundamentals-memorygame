@@ -9,13 +9,12 @@ var board = document.getElementById("game-board");
 
 var flipCard = function(){
 	if (this.getAttribute('data-card')==="king") {
-	this.innerHTML = '<img src="king.png" alt="King of Spades" />'
+	this.innerHTML = '<img style="width:150px" src="king.png" alt="King of Spades" />'
 }
 else {
-	this.innerHTML = '<img src="queen.jpg" alt="Queen of Hearts" />'
+	this.innerHTML = '<img style="width:150px" src="queen.jpg" alt="Queen of Hearts" />'
 }
 	cardsInPlay.push(this.getAttribute('data-card'));
-	console.log(5)
 	if (cardsInPlay.length === 2) {
 		isMatch(cardsInPlay);
 		cardsInPlay = [];		
@@ -25,8 +24,7 @@ else {
 var clearCards = function(){
 	console.log(7)
 	for (x=0;x<cards.length;x+=1){
-		document.getElementsByClassName("card")[x].innerHTML = ''
-		
+		document.getElementsByClassName("card")[x].innerHTML = ''		
 	}
 }
 
